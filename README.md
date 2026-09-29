@@ -19,7 +19,7 @@ open-englishのチャットには、2026-09-29時点で以下がすでに実装�
 - Google検索(設定済みの場合)で、公式サイト・入門ブログ・GitHubへの参考リンクを安全な許可リスト方式で提示
 - VS Code companion拡張機能(`open-english`リポジトリの`vscode-extension/`)には、AI先生/生徒の色分け編集ビジュアライザとLive Share同梱も用意済み
 
-このリポジトリのカリキュラム資料(`curriculum/`)は、今後open-englishのAI先生機能が参照する「教材データ」として使われることを想定しています(現時点では未接続——下記「現在のスコープ」参照)。
+このリポジトリのカリキュラム資料(`curriculum/`)は、open-englishのAI先生機能から実際に`fetch`されて使われています(データサイエンティストコース・基本的なWEBサイト開発コースの両方、2026-09-30時点で接続済み)。
 
 ## AIの選択肢(利用者が選ぶ、無料〜有料)
 
@@ -41,6 +41,18 @@ open-englishと組み合わせて使うAIは、利用者が用途と予算に応
 - **実務の3領域**(コーセラ社内データサイエンティームの例を参考): (1) インサイト業務(因果推論・統計) (2) プロダクト実験(実験デザイン・分析) (3) アナリティクス有効化(データパイプライン・ダッシュボード構築)
 
 これらを題材に、語学学習・プログラミング学習・スマホアプリ/WEBサイト開発を並行して楽しめることを目指します。
+
+## 基本的なWEBサイト開発コース
+
+3つのバックエンドスタックから選べる、実践的なWEBサイト開発コースです(詳細は[curriculum/web-dev-path.json](curriculum/web-dev-path.json))。
+
+| スタック | 特徴 |
+|---|---|
+| PHP + [Laravel](https://laravel.com) | 世界中のレンタルサーバーで動くPHP+フルスタックフレームワーク。学習リソースが豊富 |
+| Python + [FastAPI](https://fastapi.tiangolo.com) | 型ヒントからAPI仕様書を自動生成、非同期処理で高速。Pythonのライブラリ資産と連携しやすい |
+| Rust + Poem / [RPoem](https://github.com/aon-co-jp/RPoem) | 型安全・高速。aon-co-jpのaruaru-llm/aruaru-db等の多くがRPoem土台なので他リポジトリが参考になる |
+
+いずれのスタックでも、フロントエンドはHTML5+CSS3+TypeScript、データベースは[aruaru-db](https://github.com/aon-co-jp/aruaru-db)(GraphQL、APIキー自動発行)で共通です。open-englishのチャットで「Laravelを学びたい」のようにスタック名+学習意図を書くと自動発火し、スタック名を書かず「webサイト開発を学びたい」と書くと3択の概要が案内されます。
 
 ## ニュース・ブログ・URL・フリーランス案件を題材にした相談型開発(希望者のみ)
 
