@@ -17,6 +17,25 @@ AI先生プログラミング講座)は、open-english本体(`web/app.js`の
 
 ## HANDOFF
 
+- **2026-09-30続き2 rust-poemコース内でTauriも実際に学べるように**: ユーザー
+  指示「Rust+PoemでもRPeomでもコース内容的にはTauriの内容も学べるようにして」
+  への対応。単なるメリット欄への言及に留めず、`rust-poem`スタックへ
+  `desktopSnippet`(Tauriの`#[tauri::command]`実装例、Poem/RPoemサーバーへ
+  HTTPで問い合わせる構成)と`desktopNoteJa`/`desktopNoteEn`を追加。
+  open-english側`teachWebDevStack`(`web/app.js`)も、`stack.desktopSnippet`が
+  存在する場合に「デスクトップアプリ化: Tauri」のセクションとコード例を
+  追加表示するよう対応。実機テストで「RPoemを学びたい」「Tauriを学びたい」
+  のどちらでも同じコース内でバックエンド(Poem/RPoem)+デスクトップ化
+  (Tauri)の両方のコード例が表示されることを確認済み。
+
+- **2026-09-30続き 「Rust + Tauri + Poem/RPoem」独立スタックを撤回**: 一度
+  4つ目のスタックとして追加したが、ユーザー指摘「RPoemはTauriが含まれていた
+  ので除去」を受けて撤回。RPoem自体に既にTauri連携が含まれているとのことで、
+  重複を避けるため独立スタックにはせず、既存の`rust-poem`スタックの
+  `aliases`に`"tauri"`を追加、`prosJa`/`prosEn`に「RPoemはTauri連携も含んで
+  おりデスクトップアプリ化にも使える」旨を追記する形に統一した。3スタック
+  構成(PHP+Laravel/Python+FastAPI/Rust+Poem・RPoem)に戻っている。
+
 - **2026-09-30 データサイエンス接続の完了+基本的なWEBサイト開発コース新設**:
   ユーザー指示(「データサイエンティストになりたい」の自動発火説明+
   「PHP + LARAVELコースと、Python＋FastAPIコースと、Rust＋PoemかRPoemコースで、

@@ -50,7 +50,7 @@ open-englishと組み合わせて使うAIは、利用者が用途と予算に応
 |---|---|
 | PHP + [Laravel](https://laravel.com) | 世界中のレンタルサーバーで動くPHP+フルスタックフレームワーク。学習リソースが豊富 |
 | Python + [FastAPI](https://fastapi.tiangolo.com) | 型ヒントからAPI仕様書を自動生成、非同期処理で高速。Pythonのライブラリ資産と連携しやすい |
-| Rust + Poem / [RPoem](https://github.com/aon-co-jp/RPoem) | 型安全・高速。aon-co-jpのaruaru-llm/aruaru-db等の多くがRPoem土台なので他リポジトリが参考になる |
+| Rust + Poem / [RPoem](https://github.com/aon-co-jp/RPoem) | 型安全・高速。aon-co-jpのaruaru-llm/aruaru-db等の多くがRPoem土台なので他リポジトリが参考になる。[Tauri](https://tauri.app)連携も含んでおり、同じバックエンドをデスクトップアプリ化する際にも使える |
 
 いずれのスタックでも、フロントエンドはHTML5+CSS3+TypeScript、データベースは[aruaru-db](https://github.com/aon-co-jp/aruaru-db)(GraphQL、APIキー自動発行)で共通です。open-englishのチャットで「Laravelを学びたい」のようにスタック名+学習意図を書くと自動発火し、スタック名を書かず「webサイト開発を学びたい」と書くと3択の概要が案内されます。
 
