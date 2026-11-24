@@ -1,3 +1,5 @@
+> Latest translations / 翻訳の最新版: [0-LATEST-TRANSLATIONS.md](0-LATEST-TRANSLATIONS.md)
+
 # Maid Cafe Programming School
 
 *This repository documents a design concept and a small curated curriculum. It has no application code of its own — the actual teaching UI lives in [open-english](https://github.com/aon-co-jp/open-english)'s chat (see "How this connects to open-english" below). English follows the Japanese below.*
